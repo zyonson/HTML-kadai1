@@ -1,0 +1,432 @@
+*{
+box-sizing: border-box;
+}
+body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4, h5, h6, form, select {
+  margin: 0;
+  padding: 0;
+}
+body {
+    color: #000;
+    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+/*headerの後ろに画像を適用するため
+z-indexがないとボタンが押せなくなる*/
+@media screen and (min-width:1025px){
+.Header{
+  position: absolute;
+  width:100%;
+  z-index: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+}
+.header-contents{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 36px 0 36px;
+  max-width: 100%;
+  position: relative;
+}
+/*.j {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 21px
+}
+.ham {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transform: translate(0, -50%);
+    border-radius: 10px;
+    transition: top 0.2s, transform 0.2s, opacity 0.3s;
+}*/
+.logo-image-pc{
+  display: block;
+  height: 20px;
+  width: auto;
+  cursor: pointer;
+  }
+  .logo-image-pc:hover{
+    opacity: 0.2;
+  }
+  .logo-image-sp{
+    display: none;
+  }
+ul{
+  list-style:none;
+  color:#000000;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.header-menu{
+  width:auto;
+  padding-right: 40px;
+  color:#000000;
+  font-weight: 700;
+}
+header li{
+  margin-right: 45px;
+  text-align: center;
+  width: 100px;
+  font-size: 0;
+}
+li span:first-child{
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+li span:last-child{
+  font-size: 5px;
+}
+a{
+  text-decoration: none;
+  }
+#kaunsering{
+    text-align: center;
+  }
+.kaunsering{
+  justify-content: center;
+  text-align: center;
+  display:block;
+  background-color:#F79214;
+  color:white;
+  border-radius:50px;
+  font-size: 10px;
+  height: 40px;
+  width:140px;
+  padding:13px 0;
+}
+.kaunsering:hover{
+  opacity: 0.8;
+}
+.ham{
+  display: none;
+}
+@media screen and (max-width: 1080px){
+.Header-Ham{
+  cursor: pointer;
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 21px;
+  font-size: 60px;
+  z-index: 100;
+}
+.Header-Ham_line{
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  transform: translate(0, -50%);
+  border-radius: 10px;
+  transition: top 0.2s, transform 0.2s, opacity 0.3s;
+}
+/*擬似要素で線の位置をずらしてる*/
+.Header-Ham_line:first-child{
+  top: 0;
+}
+.Header-Ham_line:last-child{
+  top: 100%;  
+}
+ul{
+  display: none;
+}
+/*.ham{
+cursor: pointer;
+display: block;
+position: relative;
+width: 100px;
+height: 21px;
+font-size: 60px;
+z-index: 100;
+}*/
+}
+
+.FirstView__main-image--sp {
+    display: none;
+}
+
+.FirstView{
+  margin:0;
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 10px;
+  
+}
+.FirstViewcontainer{
+  margin-top: 0px;
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-top: 200px;
+}
+.FirstView-content{
+  margin-bottom: 70px;
+  width: fit-content;
+    
+}
+.title{
+  font-family: 'Lato', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 54px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.FirstView-content-buttons {
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+}
+.kaunsering2{
+  background-color:#F79214;
+  color:white;
+  padding:15px 15px 15px 30px;
+  margin-right: 30px;
+  text-decoration: none;
+  border-radius:40px;
+  width: 300px;
+  display: block;
+}
+.kaunsering2:hover{
+  opacity: 0.8;
+}
+
+.siryou {
+  display: block;
+  background-color:#fff;
+  color:black;
+  border: 1px solid #E0E0E0;
+  text-decoration: none;
+  padding:15px 15px 15px 30px;
+  border-radius:40px;
+  width: 300px;
+}
+.hosoku{
+  color: #A2A2A4;
+  font-size: 12px;
+  margin:10px 10px 10px 10px;
+}
+.syoukai{
+  background-color:#F79214;
+  padding:45px 0;
+  
+}
+.About{
+  max-width: 1140px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+/*1024px以下で要素が縦に並ぶ*/
+@media screen and (max-width: 1024px){
+.About{
+  flex-direction: column;
+}
+}
+.syoukai1{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0;
+  width: 53%;
+}
+@media screen and (max-width: 1024px){
+.syoukai1 {
+    margin-bottom: 10px;
+    width: 100%;
+}
+}
+.syoukai1 h2{
+  font-size: 40px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.syoukai p{
+  text-align: left;
+  color: #ffffff;
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+#naiyou{
+width: 250px;
+}
+.naiyou{
+  display:flex;
+  flex-direction:column;
+  border-radius:38px;
+  font-weight:700;
+  font-size:16px;
+  font-weight:700;
+  height:64px;
+  justify-content:center;
+  text-align:center;
+  width:100%;
+  color: #F79214;
+  background-color: #fff;
+}
+h1{
+  text-align: center;
+}
+.SecondTitle{
+  font-size: 50px;
+}
+
+
+.oi{
+  list-style-type: none;
+  text-align: center;
+  width: 700px;
+  margin:0 auto;
+}
+.setumei span{
+  color:#F79214;
+}
+
+@media screen and (max-width:780px){
+header{
+  width:100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+  .logo-image-pc{
+    display:none;
+  }
+  .logo-image-sp{
+    display:block;
+    margin:10px 10px 0 0;
+    width:auto;
+    height:16px;
+  }
+  img{
+    border:0;
+    vertical-align: middle;
+    margin: 0;
+    padding:0;
+  }
+  
+.FirstView__main-image--sp{
+  display:block;
+  width:100%;
+}
+.FirstView{
+  background-image: none;
+  margin-top: 0;
+}
+
+.FirstViewcontainer {
+    margin-top: -45vw;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.FirstView-content{
+margin: 0 auto;
+width: 100%;
+}
+.title{
+  font-size:24px;
+ 
+}
+.FirstView-content-img{
+  display: flex;
+  margin:15px 0 20px 0 ;
+}
+.img1{
+  width: 27.5%;
+}
+.img2{
+  width: 40%;
+}
+.FirstView-content-buttons {
+  display:block;
+}
+ .kaunsering2{
+  text-align:center;
+  width:100%;
+  height: auto;
+  padding:20px 0;
+  margin-bottom: 10px;
+}
+.siryou{
+  text-align:center;
+  width:100%;
+  padding:20px 0;
+}
+
+.syoukai{
+  color:#ffffff;
+  text-align: center;
+  text-align: justify;
+  padding:20px 0;
+  height:400px;
+}
+.syoukai1{
+  direction: block;
+  width: 100%;
+  text-align: center;
+}
+.naiyou{
+  display: block;
+  padding: 10px 20px;
+  margin: 0 auto;
+  height: auto;
+}
+.About{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+h2{
+  text-align: center;
+  width: 100%;
+  color: #ffffff;
+}
+.name {
+  font-size: 40px;
+}
+#naiyou{
+  text-align: center;
+}
+h1{
+  margin-top: 50px;
+}
+.SecondTitle{
+  font-size: 30px;
+}
+.sub{
+  font-size: 15px;
+}
+.oi{
+  width: auto;
+  padding: 5% 5%;
+}
+
+}
